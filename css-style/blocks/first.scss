@@ -1,0 +1,33 @@
+.first {
+    background: url('../../img/first/bg-first.jpg') center center / cover no-repeat;
+
+}
+
+.first__container {
+    height: 100%;
+}
+
+.first__content {
+    display: flex;
+    align-items: center;
+    flex: .8;
+
+}
+
+.face__title {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: $white;
+
+}
+
+.face__text {
+    font-size: 21px;
+    color: $white;
+
+}
+
+.uniq__text {
+    font-size: 16px;
+    color: $white;
+}
