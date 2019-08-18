@@ -1,0 +1,41 @@
+.why {
+    background: url('../../img/why/bg-why.jpg') center center / cover no-repeat;
+
+}
+
+.why__title {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.why__text {
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+
+.why__list {
+    display: flex;
+}
+
+.why__item {
+    flex: 1;
+    margin-right: 35px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.why__pic {
+    margin-bottom: 60px;
+}
+
+.why__subtitle {
+    margin-bottom: 27px;
+    font-size: 27px;
+}
+
+.why__subtext {
+    font-size: 18px;
+}
