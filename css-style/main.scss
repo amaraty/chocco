@@ -1,7 +1,4 @@
-$white: #fff;
-$light-blue: #61c4d9;
-$dark-green: #0b4d3c;
-
+@import url('./_misc/variables.scss');
 
 
 
@@ -17,6 +14,7 @@ $dark-green: #0b4d3c;
 @import url('./blocks/btn.scss');
 @import url('./blocks/title.scss');
 @import url('./blocks/why.scss');
+@import url('./blocks/comment.scss');
 
 
 @import url('./blocks/footer.scss');
