@@ -1,0 +1,26 @@
+$white: #fff;
+$light-blue: #61c4d9;
+$dark-green: #0b4d3c;
+$balck: #000;
+$mint: #f8faf9;
+
+
+@import "./_misc/variables.scss";
+
+
+@import "_misc/normalize.scss";
+@import "./_misc/layout.scss";
+@import "blocks/page.scss";
+
+@import "blocks/header";
+
+@import "blocks/first";
+@import "blocks/section";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/title";
+@import "./blocks/why.scss";
+@import "blocks/comment";
+
+
+@import url('./blocks/footer.scss');
