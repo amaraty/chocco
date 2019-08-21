@@ -1,26 +1,21 @@
 $white: #fff;
 $light-blue: #61c4d9;
 $dark-green: #0b4d3c;
-$balck: #000;
+$black: #000;
 $mint: #f8faf9;
 
 
-@import "./_misc/variables.scss";
-
-
-@import "_misc/normalize.scss";
-@import "./_misc/layout.scss";
-@import "blocks/page.scss";
-
-@import "blocks/header";
-
-@import "blocks/first";
-@import "blocks/section";
-@import "blocks/nav";
-@import "blocks/btn";
-@import "blocks/title";
-@import "./blocks/why.scss";
-@import "blocks/comment";
-
-
-@import url('./blocks/footer.scss');
+@import './_misc/variables.scss';
+@import './_misc/normalize.scss';
+@import './_misc/layout.scss';
+@import './blocks/page.scss';
+@import './blocks/header.scss';
+@import './blocks/first.scss';
+@import './blocks/section.scss';
+@import './blocks/nav.scss';
+@import './blocks/btn.scss';
+@import './blocks/title.scss';
+@import './blocks/why.scss';
+@import './blocks/comment.scss';
+@import './blocks/social.scss';
+@import './blocks/footer.scss';

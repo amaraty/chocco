@@ -1,16 +1,29 @@
 .why {
-    background: url('../../img/why/bg-why.jpg') center center / cover no-repeat;
+    /*background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
+    */
+    background: $white;
+}
 
+.why__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .why__title {
     margin-bottom: 20px;
+    font-family: "Alegreya Sans";
     font-size: 48px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 48px;
+    text-transform: uppercase;
 }
 
 .why__text {
     margin-bottom: 80px;
     font-size: 18px;
+    text-align: center;    
 }
 
 .why__list {
@@ -34,6 +47,8 @@
 .why__subtitle {
     margin-bottom: 27px;
     font-size: 27px;
+    font-style: bold;
+    font-weight: 700;
 }
 
 .why__subtext {
