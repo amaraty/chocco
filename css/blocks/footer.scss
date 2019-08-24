@@ -1,4 +1,5 @@
 .footer__all {
+    width: 100%;
     background: $white;
     display: flex;
     flex-direction: row;
@@ -7,6 +8,14 @@
     justify-content: space-between;
 }
 
+.footer__left {
+    width: 50%;
+}
+
+.footer__right {
+    width: 50%;
+    display: right;
+}
 
 
 .addres {

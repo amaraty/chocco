@@ -1,0 +1,60 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__list {
+    display: flex;
+}
+
+.team__item {
+    width: 220px;
+    margin-left: 20px;
+}
+
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*height: 0;
+    overflow: hidden;*/
+}
+
+.team__title {
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: medium;
+    text-transform: uppercase;
+}
+
+.team__name {
+    font-family: "Alegreya Sans";
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/*.team__name:active .team__desk {
+    overflow: visible;
+}*/
+
+.team__prof {
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.team__text {
+    text-align: center;
+    color: $hell;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 300;
+}

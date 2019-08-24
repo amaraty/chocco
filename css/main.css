@@ -533,8 +533,6 @@ section {
   font-size: 19px; }
 
 .why {
-  /*background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
-    */
   background: #fff; }
 
 .why__desc {
@@ -566,18 +564,27 @@ section {
 .why__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center; }
 
 .why__item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #f2f5f4;
   margin-right: 35px;
   text-align: center; }
   .why__item:last-child {
     margin-right: 0; }
 
 .why__pic {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
   margin-bottom: 60px; }
 
 .why__subtitle {
@@ -588,6 +595,80 @@ section {
 
 .why__subtext {
   font-size: 18px; }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__item {
+  width: 220px;
+  margin-left: 20px; }
+
+.accordeon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team__desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*height: 0;
+    overflow: hidden;*/ }
+
+.team__title {
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  font-style: medium;
+  text-transform: uppercase; }
+
+.team__name {
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 500; }
+
+/*.team__name:active .team__desk {
+    overflow: visible;
+}*/
+.team__prof {
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400; }
+
+.team__text {
+  text-align: center;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 300; }
 
 .comment__open {
   background: url("../img/comment/bg-second.jpg") center center/cover no-repeat; }
@@ -655,6 +736,7 @@ section {
   color: #000; }
 
 .footer__all {
+  width: 100%;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,6 +753,13 @@ section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.footer__left {
+  width: 50%; }
+
+.footer__right {
+  width: 50%;
+  display: right; }
 
 .addres {
   color: #010101;

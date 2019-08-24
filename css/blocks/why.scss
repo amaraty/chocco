@@ -1,6 +1,6 @@
 .why {
-    /*background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
-    */
+    //background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
+    
     background: $white;
 }
 
@@ -28,10 +28,15 @@
 
 .why__list {
     display: flex;
+    align-content: center;
 }
 
 .why__item {
     flex: 1;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: $light-gray;
     margin-right: 35px;
     text-align: center;
 
@@ -41,6 +46,9 @@
 }
 
 .why__pic {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
     margin-bottom: 60px;
 }
 

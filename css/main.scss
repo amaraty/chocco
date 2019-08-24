@@ -3,6 +3,9 @@ $light-blue: #61c4d9;
 $dark-green: #0b4d3c;
 $black: #000;
 $mint: #f8faf9;
+$light-gray: #f2f5f4;
+$hell: #666666;
+
 
 
 @import './_misc/variables.scss';
@@ -16,6 +19,7 @@ $mint: #f8faf9;
 @import './blocks/btn.scss';
 @import './blocks/title.scss';
 @import './blocks/why.scss';
+@import './blocks/team.scss';
 @import './blocks/comment.scss';
 @import './blocks/social.scss';
 @import './blocks/footer.scss';
