@@ -1,7 +1,24 @@
 .why {
     background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
     
-    //background: $white;
+    &__pic {
+        border-radius: 50%;
+        background: $light-gray;
+        width: rem(130px);
+        height: rem(130px);
+        display: inline-block;
+        margin-bottom: rem(60px);
+        position: relative;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: rem(70px);
+        width: rem(70px);
+    }
 }
 
 .why__container {
@@ -39,8 +56,6 @@
     flex: 1;
     width: rem(125px);
     height: rem(125px);
-    border-radius: 50%;
-    background: $light-gray;
     margin-right: rem(35px);
     text-align: center;
 
@@ -49,12 +64,7 @@
     }
 }
 
-.why__pic {
-    width: rem(70px);
-    height: rem(70px);
-    display: inline-block;
-    margin-bottom: rem(60px);
-}
+
 
 .why__subtitle {
     margin-bottom: rem(27px);
