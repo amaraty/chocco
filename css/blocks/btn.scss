@@ -1,8 +1,17 @@
 .btn {
-    padding: 12px 15px;
-    border-radius: 28px;
+    padding: rem(20px) rem(38px);
+    border-radius: rem(50px);
     background: $white;
+    font-family: "Alegreya Sans - Extra Bold";
+    font-weight: 400;
     text-transform: uppercase;
     color: $dark-green;
-    font-size: 19px;
+    font-size: rem(19px);
+
+    &--order {
+        background: $dark-green;
+        color: $white;
+    }
+
+    
 }

@@ -5,22 +5,32 @@ $black: #000;
 $mint: #f8faf9;
 $light-gray: #f2f5f4;
 $hell: #666666;
+$smoke: #2f3234;
 
 
-
+@import './_misc/media.scss';
 @import './_misc/variables.scss';
 @import './_misc/normalize.scss';
 @import './_misc/layout.scss';
+
 @import './blocks/page.scss';
 @import './blocks/header.scss';
+@import './blocks/hamb.scss';
 @import './blocks/first.scss';
+@import './blocks/arrow-btn.scss';
 @import './blocks/section.scss';
 @import './blocks/nav.scss';
+@import './blocks/hamburger.scss';
 @import './blocks/btn.scss';
 @import './blocks/title.scss';
 @import './blocks/why.scss';
+@import './blocks/slide.scss';
 @import './blocks/team.scss';
 @import './blocks/food.scss';
 @import './blocks/comment.scss';
+@import './blocks/order.scss';
+@import './blocks/form.scss';
+@import './blocks/map.scss';
 @import './blocks/social.scss';
+@import './blocks/sprite.scss';
 @import './blocks/footer.scss';

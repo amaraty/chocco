@@ -1,10 +1,8 @@
 .header {
-    padding-top: 25px;
+    padding-top: rem(25px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 12px;
-    
+    justify-content: space-between;    
 }
 
 .header__buttons {
@@ -25,12 +23,12 @@
         content: "";
         display: block;
         background: url('../img/icons/phone_white.png') center center/cover no-repeat;
-        height: 13px;
-        width: 13px;
-        margin-right: 15px;
+        height: rem(13px);
+        width: rem(13px);
+        margin-right: rem(15px);
     }
 }
 
 .nav__link {
-    margin-right: 15px;
+    margin-right: rem(15px);
 }

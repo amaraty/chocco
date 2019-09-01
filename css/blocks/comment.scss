@@ -5,36 +5,36 @@
 
 
 .comment__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-family: "Alegreya Sans";
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
 
 .comment__desc {
-    padding-left: 23px;
+    padding-left: rem(23px);
 }
 
 .comment__open {
     display: flex;
-    padding: 24px;
+    padding: rem(24px);
 }
 
 .comment__subtitle {
     font-family: "Alegreya Sans";
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 500;
     font-style: bold;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .comment__text {
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .comment__list {
@@ -44,17 +44,22 @@
 }
 
 .comment__item {
-    width: 68px;
-    height: 68px;
-    margin-right: 11px;
+    width: rem(68px);
+    height: rem(68px);
+    margin-right: rem(11px);
 
     &:last-child {
         margin-right: 0;
     }
 }
-
+/*
 .comment__item--active {
-    border: 6px solid $dark-green;
-    border-radius: 50px;
+    border: rem(6px) solid $dark-green;
+    border-radius: rem(50px);
 
+}*/
+
+.comment__avatar--active {
+    border: rem(6px) solid $dark-green;
+    border-radius: rem(50px);
 }

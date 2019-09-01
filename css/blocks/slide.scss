@@ -1,0 +1,129 @@
+.container--slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.slide__pic {
+    width: rem(474px);
+    height: rem(422px);
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    overflow: hidden;
+    margin: 0 10px;
+    position: relative;
+    will-change: right;
+
+}
+
+.slide__content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.slide__desc-left {
+    margin-right: rem(93px);
+}
+
+.slide {
+    position: relative;
+    background: $light-gray;
+
+    &__desc {
+        display: flex;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: rem(36px);
+        font-weight: 700;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: rem(18px);
+    }
+
+    &__subtitle {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: rem(43px);
+    }
+}
+
+.slide__desc-left {
+    width: 46%;
+}
+
+.slide__desc-right {
+    width: 54%;
+}
+
+.slide__info-weight {
+    display: flex;
+    width: 100%;
+    margin-bottom: rem(42px);
+}
+
+.calories {
+    width: 50%;
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.weight {
+    width: 50%;
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.slide__info {
+    width: 100%;
+}
+
+.slide__info-order {
+    display: flex;
+    width: 100%;
+}
+
+.info__price {
+    width: 50%;
+    font-family: "Alegreya Sans";
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: uppercase;
+}

@@ -1,7 +1,11 @@
 .why {
-    //background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
+    background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
     
-    background: $white;
+    //background: $white;
+}
+
+.why__container {
+    height: 100%;
 }
 
 .why__desc {
@@ -11,18 +15,18 @@
 }
 
 .why__title {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     font-family: "Alegreya Sans";
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     font-style: bold;
-    line-height: 48px;
+    line-height: rem(48px);
     text-transform: uppercase;
 }
 
 .why__text {
-    margin-bottom: 80px;
-    font-size: 18px;
+    margin-bottom: rem(80px);
+    font-size: rem(18px);
     text-align: center;    
 }
 
@@ -33,11 +37,11 @@
 
 .why__item {
     flex: 1;
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     border-radius: 50%;
     background: $light-gray;
-    margin-right: 35px;
+    margin-right: rem(35px);
     text-align: center;
 
     &:last-child {
@@ -46,19 +50,19 @@
 }
 
 .why__pic {
-    width: 70px;
-    height: 70px;
+    width: rem(70px);
+    height: rem(70px);
     display: inline-block;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
 }
 
 .why__subtitle {
-    margin-bottom: 27px;
-    font-size: 27px;
+    margin-bottom: rem(27px);
+    font-size: rem(27px);
     font-style: bold;
     font-weight: 700;
 }
 
 .why__subtext {
-    font-size: 18px;
+    font-size: rem(18px);
 }

@@ -1,16 +1,17 @@
 .socials {
     display: flex;
-
+    justify-content: flex-end;
+    padding-right: rem(36px);
 }
 
 .socials__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
         margin-right: 0;
     }
 }
-
+/*
 .social__link:hover {
     color: $black;
-}
+}*/

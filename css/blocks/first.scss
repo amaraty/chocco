@@ -9,6 +9,21 @@
 
 .face {
     display: flex;
+
+    &__left {
+        margin-right: rem(49px);
+    }
+
+    &__btns {
+        margin-top: rem(30px);
+    }
+
+    &__uniq {
+        margin-top: rem(64px);
+    }
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .first__content {
@@ -19,23 +34,27 @@
 }
 
 .face__title {
+    padding-top: rem(65px);
     font-family: "Alegreya Sans";
-    font-size: 60px;
+    font-size: rem(60px);
     font-weight: 700;
-    line-height: 60px;
+    line-height: rem(60px);
     text-transform: uppercase;
     color: $white;
 
 }
 
 .face__text {
-    font-size: 21px;
+    margin-top: rem(6px);
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 400;
     color: $white;
 
 }
 
 .uniq__text {
-    font-size: 16px;
+    font-size: rem(16px);
     color: $white;
 }
 
@@ -45,8 +64,13 @@
 
 .uniq__item {
     display: flex;
+    margin-right: rem(33px);
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .uniq__pic {
-    margin-right: 9px;
+    margin-right: rem(9px);
 }

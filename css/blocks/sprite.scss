@@ -1,0 +1,8 @@
+.soc-img {
+    fill: aqua;
+    width: rem(20px);
+    height: rem(20px);
+    &:hover {
+        fill: orchid;
+    }
+}
