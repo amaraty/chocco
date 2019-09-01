@@ -541,6 +541,52 @@ section {
 .uniq__pic {
   margin-right: 0.5625rem; }
 
+.fullscreen-menu {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2f3234; }
+  .fullscreen-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%; }
+  .fullscreen-menu--active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    z-index: 9; }
+
+.full-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.full-menu__item {
+  font-family: "Alegreya Sans";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 72px; }
+
 .arrow-btn-left {
   width: 13px;
   height: 28px;
@@ -933,7 +979,8 @@ section {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative; }
   .food__title {
     color: #fff;
     font-family: "Alegreya Sans";
@@ -941,20 +988,55 @@ section {
     font-weight: 700;
     text-transform: uppercase; }
   .food__subtitle {
-    background: url("../img/food/kokos.png");
     color: #fff;
     font-family: "Alegreya Sans";
     font-size: 3rem;
     font-weight: 500;
     font-style: bold; }
-  .food__text {
-    color: #ffffff;
-    font-family: "Alegreya Sans";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.49812rem;
-    background-color: #2f3234;
-    opacity: 0.93; }
+
+.food__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.food__item {
+  position: relative; }
+
+.food__subtitle {
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotateZ(-90deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+.food__text {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.49812rem;
+  background-color: #2f3234;
+  max-width: 0rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-property: max-width, opacity, visibility;
+  -o-transition-property: max-width, opacity, visibility;
+  transition-property: max-width, opacity, visibility; }
 
 .comment__open {
   background: url("../img/comment/bg-second.jpg") center center/cover no-repeat; }

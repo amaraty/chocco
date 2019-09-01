@@ -1,0 +1,37 @@
+.fullscreen-menu {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2f3234;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s ease-in-out;
+        z-index: 9;
+    }
+}
+
+.full-menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-menu__item {
+    font-family: "Alegreya Sans";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 72px;
+}
