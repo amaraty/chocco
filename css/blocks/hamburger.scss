@@ -1,4 +1,4 @@
-.hamburger {
+.header__hamburger {
     width: rem(24px);
     height: rem(4px);
     background: $white;
@@ -8,12 +8,13 @@
     margin-bottom: rem(9px);
     display: none;
 
-    @include tablets {
-        display: flex;
+    @include tablets() {
+        display: block;
+        
     }
 }
 
-.hamburger:after, .hamburger:before {
+.header__hamburger:after, .header__hamburger:before {
     content: "";
     display: block;
     width: rem(24px);
@@ -23,12 +24,12 @@
     position: absolute;
 }
 
-.hamburger:after {
+.header__hamburger:after {
     top: 100%;
     margin-top: rem(5px);
 }
 
-.hamburger:before {
+.header__hamburger:before {
     bottom: 100%;
     margin-bottom: rem(5px);
 }

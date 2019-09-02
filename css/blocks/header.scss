@@ -3,14 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;    
-}
 
-.header__buttons {
+    &__buttons {
     display: flex;
     align-items: center;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        @include tablets(){
+            display: none;
+        }
+    }
 }
-
-
 
 .contacts__phone {
     display: flex;
@@ -26,6 +31,10 @@
         height: rem(13px);
         width: rem(13px);
         margin-right: rem(15px);
+    }
+
+    @include tablets() {
+        display: none;
     }
 }
 

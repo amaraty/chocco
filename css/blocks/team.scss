@@ -2,6 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-family: "Alegreya Sans";
+        font-size: rem(48px);
+        font-weight: 700;
+        font-style: medium;
+        text-transform: uppercase;
+        margin-bottom: rem(58px);
+    }
 }
 
 .team__list {
@@ -27,13 +38,7 @@
     //overflow: hidden;
 }
 
-.team__title {
-    font-family: "Alegreya Sans";
-    font-size: rem(48px);
-    font-weight: 700;
-    font-style: medium;
-    text-transform: uppercase;
-}
+
 
 .team__name {
     font-family: "Alegreya Sans";

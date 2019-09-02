@@ -1,0 +1,32 @@
+.uniq__text {
+    font-size: rem(16px);
+    color: $white;
+}
+
+.uniq__list {
+    display: flex;
+    justify-content: space-around;
+    
+    &__item {
+    display: flex;
+    margin-right: rem(33px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__pic {
+    margin-right: rem(9px);
+    }
+
+    @include tablets() {
+        margin-bottom: rem(47px);
+    }
+
+    @include phones() {
+        margin-bottom: rem(47px);
+    }
+}
+
+
+

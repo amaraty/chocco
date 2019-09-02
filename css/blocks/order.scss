@@ -1,12 +1,15 @@
 .order {
     background: url('../img/order/orderbg.jpg') center center / cover no-repeat;
-}
 
-.order__title {
+    &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(51px);
     font-family: "Alegreya Sans";
     font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
     color: $dark-green;
+    }
     
 }

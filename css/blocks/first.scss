@@ -1,76 +1,11 @@
 .first {
     background: url('../img/first/bgfirst.jpg') center center / cover no-repeat;
-
-}
-
-.first__container {
-    height: 100%;
-}
-
-.face {
-    display: flex;
-
-    &__left {
-        margin-right: rem(49px);
+    &__container {
+        height: 100%;
     }
 
-    &__btns {
-        margin-top: rem(30px);
-    }
-
-    &__uniq {
-        margin-top: rem(64px);
-    }
-    @include tablets {
-        flex-direction: column;
-    }
-}
-
-.first__content {
+    &__content {
     display: flex;
     align-items: center;
-    flex: .8;
-
-}
-
-.face__title {
-    padding-top: rem(65px);
-    font-family: "Alegreya Sans";
-    font-size: rem(60px);
-    font-weight: 700;
-    line-height: rem(60px);
-    text-transform: uppercase;
-    color: $white;
-
-}
-
-.face__text {
-    margin-top: rem(6px);
-    font-family: "Alegreya Sans";
-    font-size: rem(21px);
-    font-weight: 400;
-    color: $white;
-
-}
-
-.uniq__text {
-    font-size: rem(16px);
-    color: $white;
-}
-
-.uniq__list {
-    display: flex;
-}
-
-.uniq__item {
-    display: flex;
-    margin-right: rem(33px);
-
-    &:last-child {
-        margin-right: 0;
     }
-}
-
-.uniq__pic {
-    margin-right: rem(9px);
 }
