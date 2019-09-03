@@ -4,6 +4,7 @@
     align-items: center;
 
     &__title {
+        padding-top: rem(73px);
         display: flex;
         justify-content: center;
         font-family: "Alegreya Sans";
@@ -13,55 +14,90 @@
         text-transform: uppercase;
         margin-bottom: rem(58px);
     }
-}
 
-.team__list {
+    &__pic {
+        width: rem(220px);
+        height: rem(288px);
+
+        @include tablets() {
+            width: rem(223px);
+            height: rem(289px);
+        }
+
+        @include phones() {
+            width: rem(144px);
+            height: rem(185px);
+        }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 25%;
+        height: 100%;
+        position: relative;
+
+        @include tablets() {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include phones() {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    &__desk {
     display: flex;
-}
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    //overflow: hidden;
+    }
 
-.team__item {
-    width: rem(220px);
-    margin-left: rem(20px);
+    &__name {
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 500;
+    
+
+        /*&:active .team__desk {
+        overflow: visible;
+        }*/
+    }
+
+    &__prof {
+    font-family: "Alegreya Sans";
+    font-size: rem(18px);
+    font-weight: 400;
+    }
+
+    &__text {
+    text-align: center;
+    color: $hell;
+    font-family: "Alegreya Sans";
+    font-size: rem(18px);
+    font-weight: 300;
+    }
 }
 
 .accordeon {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.team__desk {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 0;
-    //overflow: hidden;
-}
-
-
-
-.team__name {
-    font-family: "Alegreya Sans";
-    font-size: rem(21px);
-    font-weight: 500;
-}
-
-/*.team__name:active .team__desk {
-    overflow: visible;
-}*/
-
-.team__prof {
-    font-family: "Alegreya Sans";
-    font-size: rem(18px);
-    font-weight: 400;
-}
-
-.team__text {
-    text-align: center;
-    color: $hell;
-    font-family: "Alegreya Sans";
-    font-size: rem(18px);
-    font-weight: 300;
 }
 
 .team__expand {

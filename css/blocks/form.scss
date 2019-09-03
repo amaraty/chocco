@@ -1,53 +1,97 @@
-.form__elem {
-    display: flex;
-}
-
-.form__column {
-    flex: 1;
-    margin-left: rem(20px);
-
-    &:first-child {
-        margin-left: 0;
-    }
-}
-
-.form__row {
-    display: flex;
-}
-
-.form__block {
-    flex: 1;
-    margin-left: rem(20px);
-    display: block;
+.form {
     
-    &:first-child {
-        margin-left: 0;
+    &__elem {
+    display: flex;
+
+        @include tablets() {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    &__column {
+    width: 50%;
+    margin-left: rem(20px);
+
+        @include tablets() {
+            width: 75%;
+            margin-left: 0;
+        }
+
+        @include phones() {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 
-    &-title{
-        font-family: "Alegreya Sans";
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30.05px;
-        color: $dark-green;
-    }
+    &__row {
+        display: flex;
 
-    &--order {
-        color: $dark-green;
+        @include tablets () {
+            text-align: center;
+        }
+
+        @include phones () {
+            text-align: center;
+        }
+    }
+    
+    &__block {
+        flex: 1;
+        margin-left: rem(20px);
+        display: block;
+    
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &-title{
+            text-align: center;
+            font-family: "Alegreya Sans";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30.05px;
+            color: $dark-green;
+        }
+
+        &--order {
+            color: $dark-green;
+            margin-bottom: rem(17px);
+        }
+    }
+    
+    &__input {
+        background: $white;
+        border: rem(1px) solid $mint;
+        padding: rem(8px) rem(21px);
+        width: 100%;
         margin-bottom: rem(17px);
+
+        &--textarea {
+            resize: none;
+            height: rem(110px);
+        }
     }
-}
 
-.form__input {
-    background: $white;
-    border: rem(1px) solid $mint;
-    padding: rem(8px) rem(21px);
-    width: 100%;
-    margin-bottom: rem(17px);
+    &__buttons {
+        margin-top: rem(23px);
 
-    &--textarea {
-        resize: none;
-        height: rem(110px);
+        @include tablets() {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+
+        @include phones() {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+        
     }
 }
 

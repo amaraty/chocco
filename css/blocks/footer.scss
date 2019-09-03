@@ -1,28 +1,44 @@
 .footer {
     position: absolute;
     width: 100%;
-}
+    
+    &__all {
+        width: 100%;
+        padding: 20px 0;
+        background: $white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
 
-.footer__all {
-    width: 100%;
-    padding: 20px 0;
-    background: $white;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 
-.footer__left {
-    width: 50%;
-}
+    &__left {
+        width: 50%;
 
-.footer__right {
-    width: 50%;
-    display: right;
-}
+        @include phones() {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
 
+    &__right {
+        width: 50%;
+        display: right;
+        
+        @include phones() {
+            width: 50%;
+        }
+    }
+}
 
 .addres {
     color: #010101;
@@ -44,6 +60,10 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $dark-green;
+
+    @include phones() {
+        padding: rem(21px);
+    }
 
     &:before{
         content: "";

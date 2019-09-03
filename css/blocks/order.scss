@@ -1,5 +1,7 @@
 .order {
     background: url('../img/order/orderbg.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
 
     &__title {
     display: flex;
