@@ -196,12 +196,14 @@
             </div>
         </section>
         <!--Слайдер-->
-        <section class="section slide">
-            <a class="arrow-btn-left" id="left" href="#"></a>
+        <section class="slide">
+            <div class="arrow">
+                <img src="" alt="" class="arrow arrow--left">
+            </div>
             <div class="container container--slider">
                 <div class="slides" id="slides">
-                    <div class="slide__content">
-                        <div class="slide__center">
+                    <ul class="slide__list" id="sliderRoot">
+                        <li class="slide__item">
                             <div class="slide__desc">
                                 <div class="slide__desc-left">
                                     <img src="./img/slide/twix.png" alt="" class="slide__pic">
@@ -252,11 +254,117 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="slide__item">
+                            <div class="slide__desc">
+                                <div class="slide__desc-left">
+                                    <img src="./img/slide/twix.png" alt="" class="slide__pic">
+                                </div>
+                                <div class="slide__desc-right">
+                                    <div class="slide__title">
+                                        Батончик "Морские водоросли"
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__info-about">
+                                            <div class="slide__subtitle">
+                                                Состав:
+                                            </div>
+                                            <div class="slide__text">
+                                                <p>
+                                                    Гранола из морских водорослей с овсом,
+                                                    миндалём и тыквенными семечами. В состав
+                                                    также входят: сухое молоко, заменитель сахара                                                        и какао бобы.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="slide__info-weight">
+                                            <div class="calories">
+                                                <div class="calories__title">
+                                                    Калорийность
+                                                </div>
+                                                <div class="calories__text">
+                                                    120 ккал
+                                                </div>
+                                               </div>
+                                            <div class="weight">
+                                                <div class="weight__title">
+                                                    Вес
+                                                </div>
+                                                <div class="weight__text">
+                                                    98 грамм
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide__info-order">
+                                            <div class="info__price">
+                                                150 ₽
+                                            </div>
+                                            <div class="info__btns">
+                                                <button type="button" class="btn btn--slide">Заказать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide__item">
+                            <div class="slide__desc">
+                                <div class="slide__desc-left">
+                                    <img src="./img/slide/twix.png" alt="" class="slide__pic">
+                                </div>
+                                <div class="slide__desc-right">
+                                    <div class="slide__title">
+                                        Батончик "Морские водоросли"
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__info-about">
+                                            <div class="slide__subtitle">
+                                                Состав:
+                                            </div>
+                                            <div class="slide__text">
+                                                <p>
+                                                    Гранола из морских водорослей с овсом,
+                                                    миндалём и тыквенными семечами. В состав
+                                                    также входят: сухое молоко, заменитель сахара                                                        и какао бобы.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="slide__info-weight">
+                                            <div class="calories">
+                                                <div class="calories__title">
+                                                    Калорийность
+                                                </div>
+                                                <div class="calories__text">
+                                                    120 ккал
+                                                </div>
+                                               </div>
+                                            <div class="weight">
+                                                <div class="weight__title">
+                                                    Вес
+                                                </div>
+                                                <div class="weight__text">
+                                                    98 грамм
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide__info-order">
+                                            <div class="info__price">
+                                                160 ₽
+                                            </div>
+                                            <div class="info__btns">
+                                                <button type="button" class="btn btn--slide">Заказать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <a class="arrow-btn-right" id="right" href="#"></a>
+            <div class="arrow">
+                <img src="" alt="" class="arrow arrow--right">
+            </div>
         </section>
         <!--Команда-->
         <section class="team">
@@ -277,7 +385,7 @@
                                             Кирилл Фёдорович
                                             <img src="./img/team/triangle.png" alt="" class="team__expand">
                                         </div>
-                                        <div class="team__desk">
+                                        <div class="team__desk team__desk:active">
                                             <div class="team__prof">
                                                 Главный технолог
                                             </div>
@@ -492,20 +600,20 @@
                     Закажите доставку
                 </div>
                 <div class="form">
-                    <form action="" class="form__elem">
+                    <form method="POST" class="form__elem" id="buy">
                         <div class="form__column">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__block-title">
                                         Имя
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" id="name" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">
                                         Телефон
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" id="phone" required>
                                 </label>
                             </div> 
                             <div class="form__row">
@@ -513,7 +621,7 @@
                                     <div class="form__block-title">
                                         Улица
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                             </div> 
                             <div class="form__row">
@@ -521,25 +629,25 @@
                                     <div class="form__block-title">
                                         Дом
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">
                                         Корпус
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">
                                         Квартира
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__block-title">
                                         Этаж
                                     </div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                             </div> 
                         </div>
@@ -548,7 +656,7 @@
                                 <div class="form__block-title">
                                     Комментарии
                                 </div>                                  
-                                <textarea class="form__input form__input--textarea"></textarea>
+                                <textarea class="form__input form__input--textarea" id="comment"></textarea>
                             </label>
                             <div class="form__row">
                                 <label for="payment" class="form__block form__block--order">
@@ -631,5 +739,6 @@
     </footer>
 
     <script src="./js/slider.js"></script>
+    <script src="./js/order.js"></script>
 </body>
 </html>
