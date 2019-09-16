@@ -1,15 +1,16 @@
 .food {
-    background: url('../img/food/cooockies.jpg') center center / cover no-repeat;
+    background: url('../img/food/food-bg.png') center center / cover no-repeat;
     display: flex;
     flex-direction: row;
     position: relative;
 
     &__title {
-    color: $white;
-    font-family: "Alegreya Sans";
-    font-size: rem(48px);
-    font-weight: 700;
-    text-transform: uppercase;
+        padding-top: 50%;
+        color: $white;
+        font-family: "Alegreya Sans";
+        font-size: rem(48px);
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     &__subtitle {
@@ -31,33 +32,71 @@
     bottom: 0;
     padding: 0;
     margin: 0;
-    justify-content: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
 }
 
 .food__item {
-    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.food__item_active .food__subtitle {
+    color: $light-blue;
+}
+
+.food__item_active .food__text {
+    min-width: rem(450px);
+    padding: rem(62px) rem(35px);
+    visibility: visible;
+    opacity: 1;
+
+    @include tablets() {
+        min-width: rem(360px);
+    }
+
+    @include phones() {
+        min-width: rem(250px);
+    }
 }
 
 .food__subtitle {
+    position: relative;
+    width: rem(80px);
+    font-family: "Alegreya Sans";
+    font-size: rem(48px);
+    font-weight: 500;
+    font-style: bold;
+    line-height: rem(80px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.food__subtitle span {
     white-space: nowrap;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
+    -ms-transform: rotate(-90deg);
     transform: rotateZ(-90deg);
+    -ms-transform-origin: 0 0;
     transform-origin: 0 0;
 }
 
 .food__text {
+    background-color: $half-smoke;
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: rem(16px);
     font-weight: 400;
     line-height: rem(23.97px);
-    background-color: $smoke;
     max-width: rem(0px);
     visibility: hidden;
     opacity: 0;
-    transition: 1s;
-    transition-property: max-width, opacity, visibility; 
+    transition: all 1s ease-in-out; 
 }

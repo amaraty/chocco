@@ -1,0 +1,8 @@
+.soc-img {
+    fill: $gray;
+    width: rem(40px);
+    height: rem(40px);
+    &:hover {
+        fill: $black;
+    }
+}

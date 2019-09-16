@@ -1,0 +1,11 @@
+.first {
+    background: url('../img/first/bgfirst.jpg') center center / cover no-repeat;
+    &__container {
+        height: 100%;
+    }
+
+    &__content {
+    display: flex;
+    align-items: center;
+    }
+}

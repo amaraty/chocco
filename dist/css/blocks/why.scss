@@ -1,0 +1,106 @@
+.why {
+    background: url('../img/why/bg-why.jpg') center center / cover no-repeat;
+    
+    &__all {
+        margin-top: rem(111px);
+    }
+
+    &__pic {
+        border-radius: 50%;
+        background: $light-gray;
+        width: rem(130px);
+        height: rem(130px);
+        display: inline-block;
+        margin-bottom: rem(60px);
+        position: relative;
+
+        @include phones() {
+            margin-right: rem(13px);
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: rem(70px);
+        width: rem(70px);
+    }
+    
+    &__container {
+    height: 100%;
+    }
+    
+    &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    &__title {
+    margin-top: rem(115px);
+    margin-bottom: rem(20px);
+    font-family: "Alegreya Sans";
+    font-size: rem(48px);
+    font-weight: 700;
+    font-style: bold;
+    line-height: rem(48px);
+    text-transform: uppercase;
+    }
+
+    &__text {
+    margin-bottom: rem(80px);
+    font-size: rem(18px);
+    text-align: center;    
+    }
+
+    &__list {
+    display: flex;
+    align-content: center;
+    @include tablets(){
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+    &__item {
+    flex: 1;
+    width: rem(125px);
+    height: rem(125px);
+    margin-right: rem(35px);
+    text-align: center;
+
+        &:last-child {
+        margin-right: 0;
+        }
+
+        @include tablets() {
+            width: 100%;
+            padding: rem(20px);
+            margin-right: 0;
+        }
+
+        @include phones() {
+            display: flex;
+            text-align: left;
+
+        }
+    }
+
+    &__subtitle {
+    margin-bottom: rem(27px);
+    font-size: rem(27px);
+    font-style: bold;
+    font-weight: 700;
+    }
+
+    &__subtext {
+    font-size: rem(18px);
+    }
+}
+
+
+
+
+

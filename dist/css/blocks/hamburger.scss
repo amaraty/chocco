@@ -1,0 +1,35 @@
+.header__hamburger {
+    width: rem(24px);
+    height: rem(4px);
+    background: $white;
+    border-radius: rem(5px);
+    position: relative;
+    margin-top: rem(9px);
+    margin-bottom: rem(9px);
+    display: none;
+
+    @include tablets() {
+        display: block;
+        
+    }
+}
+
+.header__hamburger:after, .header__hamburger:before {
+    content: "";
+    display: block;
+    width: rem(24px);
+    height: rem(4px);
+    border-radius: rem(5px);
+    background: $white;
+    position: absolute;
+}
+
+.header__hamburger:after {
+    top: 100%;
+    margin-top: rem(5px);
+}
+
+.header__hamburger:before {
+    bottom: 100%;
+    margin-bottom: rem(5px);
+}

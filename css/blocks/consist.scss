@@ -1,0 +1,59 @@
+.consist {
+    display: flex;
+
+    &__pic {
+        cursor: pointer;
+    }
+
+    &__desk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: rem(270px);
+        height: rem(382px);
+        position: absolute;
+        margin-left: rem(90px);
+        background: $white;
+        opacity: 0.9;
+        //height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        &-logo {
+            margin-right: rem(20px);
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__text {
+        margin-right: rem(40px);
+        font-family: "Alegreya Sans";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__mass {
+        font-family: "Alegreya Sans";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.consist__pic_active .consist__desk {
+    //width: rem(270px);
+    height: rem(382px);
+    opacity: 0.9;
+}

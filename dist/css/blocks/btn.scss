@@ -1,0 +1,23 @@
+.btn {
+    padding: rem(20px) rem(38px);
+    border-radius: rem(50px);
+    background: $white;
+    font-family: "Alegreya Sans - Extra Bold";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $dark-green;
+    font-size: rem(19px);
+
+    &--order {
+        background: $dark-green;
+        color: $white;
+        margin-right: rem(29px);
+    }
+
+    &--slide {
+        background: $dark-green;
+        color: $white;
+    }
+
+    
+}

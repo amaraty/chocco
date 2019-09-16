@@ -1,0 +1,76 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    
+    &__all {
+        width: 100%;
+        padding: 20px 0;
+        background: $white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__left {
+        width: 50%;
+
+        @include phones() {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        display: right;
+        
+        @include phones() {
+            width: 50%;
+        }
+    }
+}
+
+.addres {
+    color: #010101;
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 400;
+    font-style: bold;
+    line-height: rem(23.82px);
+}
+
+.contacts__phone-foot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: rem(21px);
+    font-weight: 400;
+    font-style: bold;
+    line-height: rem(30px);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $dark-green;
+
+    @include phones() {
+        padding: rem(21px);
+    }
+
+    &:before{
+        content: "";
+        display: block;
+        background: url('../img/icons/phone_green.png') center center/cover no-repeat;
+        height: rem(13px);
+        width: rem(13px);
+        margin-right: rem(15px);
+    }
+}

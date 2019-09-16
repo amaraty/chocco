@@ -1,0 +1,43 @@
+.header {
+    padding-top: rem(25px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+
+    &__buttons {
+    display: flex;
+    align-items: center;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        @include tablets(){
+            display: none;
+        }
+    }
+}
+
+.contacts__phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: $white;
+
+    &:before{
+        content: "";
+        display: block;
+        background: url('../img/icons/phone_white.png') center center/cover no-repeat;
+        height: rem(13px);
+        width: rem(13px);
+        margin-right: rem(15px);
+    }
+
+    @include tablets() {
+        display: none;
+    }
+}
+
+.nav__link {
+    margin-right: rem(15px);
+}

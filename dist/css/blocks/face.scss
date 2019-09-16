@@ -1,0 +1,52 @@
+.face {
+    display: flex;
+    @include tablets(){
+        flex-direction: column-reverse;
+    }
+
+    &__title {
+        padding-top: rem(65px);
+        font-family: "Alegreya Sans";
+        font-size: rem(60px);
+        font-weight: 700;
+        line-height: rem(60px);
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__left {
+        margin-right: rem(49px);
+        @include tablets(){
+            text-align: center;
+        }
+    }
+
+    &__right {
+        @include tablets(){
+            text-align: center;
+        }
+    }
+
+    &__btns {
+        margin-top: rem(30px);
+    }
+
+    &__uniq {
+        margin-top: rem(64px);
+    }
+
+    &__text {
+    margin-top: rem(6px);
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 400;
+    color: $white;
+    }
+
+    &__pic {
+        @include tablets(){
+            height: rem(370px);
+        }
+    }
+}
+

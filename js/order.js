@@ -1,4 +1,4 @@
-const form = document.querySelector('buy');
+const form = document.querySelector('#buy');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();

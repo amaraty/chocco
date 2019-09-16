@@ -1,0 +1,63 @@
+.food {
+    background: url('../img/food/cooockies.jpg') center center / cover no-repeat;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    &__title {
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-size: rem(48px);
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+
+    &__subtitle {
+        //background: url('../img/food/kokos.png');
+        color: $white;
+        font-family: "Alegreya Sans";
+        font-size: rem(48px);
+        font-weight: 500;
+        font-style: bold;
+        //transform: rotate(-90deg),;
+    }
+
+}
+
+.food__list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.food__item {
+    position: relative;
+}
+
+.food__subtitle {
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(-90deg);
+    transform-origin: 0 0;
+}
+
+.food__text {
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(23.97px);
+    background-color: $smoke;
+    max-width: rem(0px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    transition-property: max-width, opacity, visibility; 
+}

@@ -6,14 +6,14 @@ let sliderStep = 0;
 
 leftArrow.addEventListener('click', function(){
     console.log('LeftClick');
-    sliderStep -= 940;
+    sliderStep -= 884;
     rootSlider.style.transform = "translate(-" + sliderStep + "px)";
     console.log(sliderStep)
 });
 
 rightArrow.addEventListener('click', function(){
     console.log('RightClick');
-    sliderStep += calculateMaxWidth();
+    sliderStep += 884;
     rootSlider.style.transform = "translate(-" + sliderStep + "px)";
 
     console.log('plus', sliderStep)

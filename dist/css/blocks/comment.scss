@@ -1,0 +1,138 @@
+.comment {
+
+    &__down {
+        margin-top: rem(41px);
+    }
+
+    &__open {
+        background: url('../img/comment/bg-second.jpg') center center / cover no-repeat;
+        margin-bottom: rem(27px);
+        display: flex;
+        padding: rem(24px);
+
+        @include tablets() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align-last: center;
+        }
+
+        &-photo {
+            @include tablets(){
+                margin-top: rem(40px);
+            }
+        }
+
+        @include phones() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align-last: center;
+        }
+
+        &-photo {
+            @include phones(){
+                margin-top: rem(40px);
+            }
+        }
+    }
+
+    &__open-photo {
+        width: rem(254px);
+        height: rem(260px);
+
+        @include tablets(){
+            width: rem(204px);
+            height: rem(209px);
+        }
+
+        @include phones(){
+            width: rem(122px);
+            height: rem(125px);
+        }
+    }
+
+    &__title {
+        margin-top: rem(66px);
+        font-size: rem(48px);
+        font-family: "Alegreya Sans";
+        font-size: rem(48px);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    &__desc {
+        width: rem(527px);
+        padding-left: rem(23px);
+    }
+
+    &__subtitle {
+        font-family: "Alegreya Sans";
+        font-size: rem(30px);
+        font-weight: 500;
+        font-style: bold;
+        margin-bottom: rem(25px);
+
+        @include tablets() {
+            margin-top: 0.5625rem;
+            margin-bottom: 0.5625rem;
+        }
+
+        @include phones() {
+            margin-top: 0.5625rem;
+            margin-bottom: 0.5625rem;
+        }
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+        margin-bottom: rem(25px);
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    &__item {
+        margin-right: rem(11px);
+
+        @include tablets() {
+            margin-right: 1.6875rem;
+        }
+
+        @include phones() {
+            margin-right: 1.6875rem;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__avatar {
+        width: rem(68px);
+        height: rem(68px);
+
+        &--active {
+            border: rem(6px) solid $dark-green;
+            border-radius: rem(50px);
+        }
+
+        @include tablets() {
+            width: rem(84px);
+            height: rem(84px);
+        }
+    }
+}
+
+/*
+.comment__item--active {
+    border: rem(6px) solid $dark-green;
+    border-radius: rem(50px);
+
+}*/

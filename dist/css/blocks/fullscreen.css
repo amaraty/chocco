@@ -1,0 +1,32 @@
+.fullscreen-menu {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2f3234; }
+  .fullscreen-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%; }
+  .fullscreen-menu--active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+
+.menu__item {
+  font-family: "Alegreya Sans";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 72px; }

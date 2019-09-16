@@ -1,0 +1,171 @@
+.container--slider {
+    width: rem(940px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: relative;
+    background: $light-gray;
+
+    &__desc {
+        display: flex;
+        width: 100%;
+
+        @include tablets() {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: rem(36px);
+        font-weight: 700;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: rem(18px);
+    }
+
+    &__subtitle {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+        margin-bottom: rem(43px);
+    }
+    
+    &__pic {
+        width: rem(474px);
+        height: rem(422px);
+
+        @include tablets() {
+            padding-top: rem(40px);
+            width: rem(370px);
+            height: rem(336px);
+        }
+
+        @include phones() {
+            padding-top: rem(40px);
+            width: rem(370px);
+            height: rem(336px);
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-top: rem(250px);
+        width: 100%;
+        align-items: center;
+        //justify-content: center;
+        box-sizing: border-box;
+        transition: .5s all ease-in-out;
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
+    &__desc-left {
+        margin-right: rem(93px);
+        width: 46%;
+
+        @include tablets() {
+            margin-right: 0;
+            width: 100%;
+        }
+
+        @include phones() {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+    
+    &__desc-right {
+    width: 54%;
+
+        @include tablets() {
+            width: 96%;
+        }
+
+        @include phones() {
+            width: 96%;
+        }
+    }
+
+    &__info{
+    
+        &-weight {
+            display: flex;
+            width: 100%;
+            margin-bottom: rem(42px);
+        }
+
+        &-order{
+        display: flex;
+        justify-content: space-around;
+        }
+    }
+}
+
+.slides {
+    //display: flex;
+    //flex-direction: row;
+    height: 100%;
+    width: 94%;
+    overflow: hidden;
+    margin: 0 rem(10px);
+    //position: relative;
+    //will-change: right;
+}
+
+.calories {
+    width: 50%;
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 700;
+    }
+}
+
+.info__price {
+    width: 50%;
+    font-family: "Alegreya Sans";
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: rem(60px);
+    text-transform: uppercase;
+}
+
+.weight {
+    width: 50%;
+
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 700;
+    }
+}

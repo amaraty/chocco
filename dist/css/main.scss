@@ -7,7 +7,6 @@ $gray: #b2b2b2;
 $light-gray: #f2f5f4;
 $hell: #666666;
 $smoke: #2f3234;
-$half-smoke: rgba(47, 50, 52, .929);
 
 
 @import './_misc/media.scss';
@@ -29,7 +28,6 @@ $half-smoke: rgba(47, 50, 52, .929);
 @import './blocks/title.scss';
 @import './blocks/why.scss';
 @import './blocks/slide.scss';
-@import './blocks/consist.scss';
 @import './blocks/team.scss';
 @import './blocks/food.scss';
 @import './blocks/comment.scss';
