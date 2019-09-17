@@ -2,6 +2,9 @@ const sections = $(".sections");
 const display = $(".maincontent");
 let inscroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
 const performTransition = sectionEq => {
     if (inscroll === false) {
         inscroll = true;
@@ -66,3 +69,25 @@ $(document).on("keydown", e => {
         }
     }
 })
+
+if (isMobile) {
+    window.addEventListener(
+        "touchmove",
+        e => {
+            e.preventDefault();
+    },
+    { passive: false}
+    );
+
+    $("body").swipe( {
+        swipe: function(event, direction) {
+            let scrollDirection;
+
+            if (direction === "up") scrollDirection = "next";
+            if (direction === "down") scrollDirection = "prev";
+
+            scrollViewport(scrollDirection);
+        }
+    });
+}
+

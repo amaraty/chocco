@@ -1,0 +1,52 @@
+.player {
+    background-color: $mint;
+    position: relative;
+    display: flex;
+
+    &__title {
+
+        font-family: "Alegreya Sans";
+        font-size: rem(48px);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.container--player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.videoplayer {
+    min-width: 70%;
+    position: relative;
+    overflow: hidden;
+
+    &__fact {
+        width: rem(660px);
+        height: rem(512px);
+
+        @include tablets() {
+            width: rem(591px);
+            height: rem(331px);
+        }
+
+        @include phones() {
+            width: rem(397px);
+            height: rem(223px);
+        }
+    }
+}
+/*.hidden{
+    display: none;
+}
+
+#playBtn {
+    border: solid 1px #333;
+    padding: 5px;
+    cursor: pointer;
+}*/
